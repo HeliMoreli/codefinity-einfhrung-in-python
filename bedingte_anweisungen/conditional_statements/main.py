@@ -2,11 +2,14 @@
 product_type = "Dairy"  
 day_of_week = "Wednesday"
 
-number_of_cows = 10
+if (product_type == "Fruits") and (day_of_week == "Monday"):
+    print("10% discount on Fruits today!")
+elif(product_type == "Vegetables") and (day_of_week == "Tuesday"):
+    print("15% discount on Vegetables today!")
+elif(product_type == "Dairy") and (day_of_week == "Wednesday"):
+    print("20% discount on Dairy today!")
 
-if number_of_cows < 5: 
-    print("not enough cows")
-elif (number_of_cows >=6) and (number_of_cows <=9):
-    print("let's discuss options")
+elif(product_type == "Other"):
+    print("No discount available.")
 else:
-    print("this will be fine")
+    print("No special discounts today.")
