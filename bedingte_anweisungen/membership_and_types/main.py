@@ -3,21 +3,18 @@ description = "Imported honey, raw and unfiltered"
 price = "5.99"
 count = 120
 
+contains_raw = "raw" in description
+contains_Imported = "Imported" in description
 
-merci = "milch, kaffee, praline"
-gute_sorte = "milch" in merci and "dark" not in merci
+price_is_float = type(price) == float
+count_is_int = type(count) == int
 
-print("ich mag nur etwas mit milch", gute_sorte)
+#print(contains_raw)
+#print(contains_imported)
+#print(price_is_float)
+#print(count_is_int)
 
-product_name = "Almond Milk"
-product_quantity = 30
-
-correct_name_type = type(product_name) == str
-correct_quantity_type = type(product_quantity) == int
-print(correct_name_type, correct_quantity_type)
-print(type(product_name) == type(merci))
-print(type(correct_name_type) == type(correct_quantity_type))
-print(type(correct_name_type))
-
-What_type_is_merci = type(merci)
-print(What_type_is_merci)
+print("Contains 'raw':", contains_raw)
+print("Contains 'Imported':", contains_Imported)
+print("Is price a float?:", price_is_float)
+print("Is count an integer?:", count_is_int)
